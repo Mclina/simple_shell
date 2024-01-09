@@ -53,6 +53,13 @@ void env_print(void);
 void free_args(char **args);
 void free_args2(char ***args);
 
+/* error.c */
+void _puts(char *str);
+void _puterror(char *err);
+
+/* get_path.c */
+char *get_path(void);
+
 /** UTILS **/
 int _atoi(const char *str);
 int _strncmp(const char *s1, char *s2, size_t n);
