@@ -46,6 +46,17 @@ char *file_search(dir_l *head, char *name);
 int isPrgPath(char *path);
 char *prg_search(char *name);
 
+/* free.c */
+void free_error(char **argv, char *arg);
+void free_tokens(char **ptr);
+void free_path(void);
+
+/* signal_handler.c */
+void handle_sigint(int sig);
+void handle_sigquit(int sig);
+void handle_sigstp(int sig);
+
+
 /** Execute Functions **/
 int exe_cmd(char **args, char **env);
 void shell_exit(char **args);
